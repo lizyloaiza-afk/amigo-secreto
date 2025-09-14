@@ -20,9 +20,28 @@ function agregarAmigo() {
     nombres.push(nombre);
 
     //Mostrar en pantalla
-    mostrarlista();
+     mostrarLista() 
+    
+    
 
     //Limpiar campo de entrada
     input.value = "" ;
+};
 
+function mostrarLista() {
+    //1. Obtener el elemento de la lista
+        const lista = document.getElementById("listaAmigos");
+
+        //2. Limpiar la lista
+        lista.innerHTML = "";
+
+        //3. Iterar sobre el arreglo
+        for (let i = 0; i < nombres.length; i++) {
+        const nombre = nombres[i];
+
+       // 4. Crear y agregar elemento <li>
+        const li = document.createElement("li");
+        li.textContent = nombre;
+        lista.appendChild(li);
+        }
 }

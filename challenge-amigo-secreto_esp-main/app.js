@@ -45,3 +45,28 @@ function mostrarLista() {
         lista.appendChild(li);
         }
 }
+//Función Sortear Amigo
+function sortearAmigo() {
+  const inputs = document.querySelectorAll(".nombre");
+  const nombres = [];
+
+  inputs.forEach(input => {
+    if (input.value.trim() !== "") {
+      nombres.push(input.value.trim());
+    }
+  });
+
+  //Validar que haya nombres disponibles
+  if (nombres.length === 0) {
+    document.getElementById("resultado").innerHTML = "No hay participantes disponibles para el sorteo.";
+    return;
+  }
+
+  //Generar índice aleatorio
+  const indiceAleatorio = Math.floor(Math.random() * nombres.length);
+  const nombreSorteado = nombres[indiceAleatorio];
+
+
+  //Mostrar resultado
+  document.getElementById("resultado").innerHTML = `🎉 Tu amigo secreto es: <strong>${nombreSorteado}</strong>`;
+}

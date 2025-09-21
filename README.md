@@ -36,6 +36,7 @@ Asignaciones repetidas o autoasignaciones → El algoritmo está diseñado para 
 Página en GitHub Pages no carga → Confirma que index.html esté en la raíz del repositorio y que GitHub Pages esté activado en Settings → Pages.
 
 Demo en línea:
+https://lizyloaiza-afk.github.io/amigo-secreto/
 
 Sobre mí:
 Este proyecto me permitió practicar lógica en JavaScript, manejo de Git y GitHub, y la publicación de proyectos en GitHub Pages. Más allá de cumplir con el reto, me ayudó a reforzar mi forma modular de trabajar y a documentar de manera clara cada paso.
